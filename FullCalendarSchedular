@@ -1,0 +1,43 @@
+<!-- 
+/**
+* Full Calendar using Schedular Plugin 
+* @category  Lightning component
+* @author    Veeranjaneyulu k
+**/
+-->
+<aura:component controller="FullCalendarSchCntr" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
+    
+    <!-- LIBRARIES -->
+    <ltng:require styles="{!join(',', 
+                          $Resource.FullCalendarSch + '/FullCalendarSch/fullcalendar.min.css',                           
+                          $Resource.FullCalendarSch + '/FullCalendarSch/scheduler.min.css')}" 
+                  scripts="{!join(',',
+                           $Resource.FullCalendarSch + '/FullCalendarSch/moment.js',
+                           $Resource.FullCalendarSch + '/FullCalendarSch/jquery.min.js',                           
+                           $Resource.FullCalendarSch + '/FullCalendarSch/fullcalendar.min.js',
+                           $Resource.FullCalendarSch + '/FullCalendarSch/scheduler.min.js')}"
+                  afterScriptsLoaded="{!c.jsLoaded}"/>
+    <!-- EVENTS -->
+   
+    <!-- ATTRIBUTES -->
+    <aura:attribute type="Object[]" name="Resources"/>
+   
+    
+ 	<!-- Events Start -->
+     <div class="EventSection" >
+         <span>
+            <ul >
+                <li><span class="event-Inquired"></span>Inquired</li>
+                <li><span class="event-Hold"></span>Hold</li>
+                <li><span class="event-Confirmed"></span>Confirmed</li>
+                <li><span class="event-Cancelled"></span>Cancelled</li>                                 
+            </ul>
+             </span>
+        </div>
+    	<!-- Events End -->
+    <!-- Calendar Section Start -->
+    <div id="container" style="width: 90% !important;overflow:hidden;margin:10px;">
+        <div id="calendar"></div>
+    </div>
+    <!-- Calendar Section End --> 
+</aura:component>
