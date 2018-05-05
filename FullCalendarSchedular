@@ -17,13 +17,11 @@
                            $Resource.FullCalendarSch + '/FullCalendarSch/fullcalendar.min.js',
                            $Resource.FullCalendarSch + '/FullCalendarSch/scheduler.min.js')}"
                   afterScriptsLoaded="{!c.jsLoaded}"/>
-    <!-- EVENTS -->
-   
-    <!-- ATTRIBUTES -->
+       <!-- ATTRIBUTES -->
     <aura:attribute type="Object[]" name="Resources"/>
    
     
- 	<!-- Events Start -->
+ 	<!--Calendor Events Start -->
      <div class="EventSection" >
          <span>
             <ul >
@@ -34,7 +32,7 @@
             </ul>
              </span>
         </div>
-    	<!-- Events End -->
+    	<!--Calendor Events End -->
     <!-- Calendar Section Start -->
     <div id="container" style="width: 90% !important;overflow:hidden;margin:10px;">
         <div id="calendar"></div>
