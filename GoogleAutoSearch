@@ -1,3 +1,10 @@
+<!-- 
+/**
+* Google Auto Search  
+* @category  Lightning component
+* @author    Veeranjaneyulu k
+**/
+-->
 <aura:component description="GoogleMapsLanguageAutoComplete" implements="forceCommunity:availableForAllPageTypes,lightning:actionOverride"  access="global"  controller="POC_RegionTreeController">
     
     <aura:attribute name="options" type="List" />
